@@ -17,7 +17,7 @@ def check_time(START_HOUR=0, END_HOUR=24):
     while True:
         now = datetime.now()
         # print(now)
-        if START_HOUR <= now.hour < END_HOUR and (now.minute%2) == 0:
+        if START_HOUR <= now.hour < END_HOUR and now.minute == 0:
             text_to_sound(now)
             time.sleep(CLOSE_TO_HOUR)
         else:
