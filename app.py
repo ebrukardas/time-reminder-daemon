@@ -26,4 +26,7 @@ def check_time(START_HOUR=0, END_HOUR=24):
 
 
 # check_time(START_HOUR=7, END_HOUR=17)
-check_time()
+# check_time()
+
+if __name__ == "__main__":
+    check_time()
