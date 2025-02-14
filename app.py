@@ -1,11 +1,10 @@
 import pyttsx3
 import time
 from datetime import datetime
-# time.sleep(time_as_sec) # takes sec
 
 SECONDS_PER_MINUTE =    60
 MINUTES_PER_HOUR =      60
-CLOSE_TO_HOUR =         SECONDS_PER_MINUTE*(MINUTES_PER_HOUR-1) # 20
+CLOSE_TO_HOUR =         SECONDS_PER_MINUTE*(MINUTES_PER_HOUR-1)
 
 def text_to_sound(time):
     engine = pyttsx3.init()
@@ -17,7 +16,7 @@ def check_time(START_HOUR=0, END_HOUR=24):
     while True:
         now = datetime.now()
         # print(now)
-        if START_HOUR <= now.hour < END_HOUR and (now.minute%2) == 0:
+        if START_HOUR <= now.hour < END_HOUR and now.minute == 0:
             text_to_sound(now)
             time.sleep(CLOSE_TO_HOUR)
         else:
@@ -26,4 +25,7 @@ def check_time(START_HOUR=0, END_HOUR=24):
 
 
 # check_time(START_HOUR=7, END_HOUR=17)
-check_time()
+# check_time()
+
+if __name__ == "__main__":
+    check_time()
