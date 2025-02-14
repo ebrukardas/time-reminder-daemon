@@ -4,7 +4,7 @@ from datetime import datetime
 
 SECONDS_PER_MINUTE =    60
 MINUTES_PER_HOUR =      60
-CLOSE_TO_HOUR =         SECONDS_PER_MINUTE*(MINUTES_PER_HOUR-1) # 20
+CLOSE_TO_HOUR =         SECONDS_PER_MINUTE*(MINUTES_PER_HOUR-1)
 
 def text_to_sound(time):
     engine = pyttsx3.init()
