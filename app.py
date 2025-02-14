@@ -1,7 +1,6 @@
 import pyttsx3
 import time
 from datetime import datetime
-# time.sleep(time_as_sec) # takes sec
 
 SECONDS_PER_MINUTE =    60
 MINUTES_PER_HOUR =      60

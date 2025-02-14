@@ -1,8 +1,8 @@
-Windows (Using Task Scheduler)
+Create daemon in Windows (Using Task Scheduler)
 
-Steps:
-1 Save the script as time_announcer.py in a permanent location
-(e.g., C:\scripts\time_announcer.py).
+    Steps:
+    1 Save the script as time_announcer.py in a permanent location
+    (e.g., C:\scripts\time_announcer.py).
 
     2 Use pythonw.exe (runs without opening a terminal). Find its path using:
         $ where pythonw
